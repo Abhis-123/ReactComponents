@@ -11,8 +11,18 @@ import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
+import Person from './components/Person'
+import Stylesheet from './Styles/Stylesheets'
+import Inline from './Styles/inlinestyle'
+import cssmodule from "./css/css.module.css"
 
 class App extends Component {
+  p={
+    id:1,
+    name:"Abhishek",
+    age:3,
+    skill:" angular"
+  }
   render() {
     return (
       <div className="App">
@@ -42,9 +52,23 @@ class App extends Component {
         {/* <NameList /> */}
 
         {/* <ParentComponent /> */}
+        {/* <FunctionClick /> */}
+        {/* <UserGreeting /> */}
 
-        <UserGreeting />
-      </div>
+        {/* <NameList/>
+       
+        <Person  person={this.p}  key={this.p.id}/> */}
+
+        <Stylesheet />
+        <Inline />
+
+        <h2 className={cssmodule.success}>
+          module
+        </h2>
+        <h2 className="primary">
+          module
+        </h2>
+         </div>
     )
   }
 }
