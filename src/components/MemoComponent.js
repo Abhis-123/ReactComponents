@@ -8,4 +8,4 @@ function MemoComponent(props) {
     )
 }
 
-export default MemoComponent
+export default React.memo(MemoComponent)

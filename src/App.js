@@ -25,6 +25,8 @@ import RegularComponent from './components/RegularComponent'
 import ParentComponent from './components/ParentComponent'
 import Pcomponent from './components/Pcomponent'
 import RefComponent from './advance/RefComponent'
+import FocusInput from './advance/FocusInput'
+import Portals from './portals/Portals'
 
 class App extends Component {
   // p={
@@ -91,7 +93,11 @@ class App extends Component {
 
         {/* <Pcomponent /> */}
 
-        <RefComponent />
+        {/* <RefComponent /> */}
+
+        {/* <FocusInput /> */}
+
+        <Portals/>
          </div>
 
     )
